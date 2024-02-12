@@ -1,3 +1,40 @@
-html {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+#hello {
+    background:linear-gradient(to top, #ff7e5f, #779696);
+    overflow: hidden;
+    
+
+}
+
+#bodypage2 {
+    font-size: 20px;
+}
+#linkindex {
+    font-size: 14px;
+    color:linear-gradient(to top, #ff7e5f, #779696)
+}
+a {
+    color: pink;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#titleone {
+    font-size: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+
+    font-weight: bold;
+    position: absolute;
+    left:10%;
+    top: 13%;
+;
+
+
 }
