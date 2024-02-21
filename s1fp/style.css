@@ -8,7 +8,7 @@ min-height: 100vh; /* Minimum height of 100% of the viewport height */
 background: linear-gradient(to top, #7c9a87, #fa913b); /* Your gradient */
 background-repeat: no-repeat; /* Do not repeat the background */
 background-attachment: fixed; /* Keep the background fixed during scrolling */
-background-size: cover; /* Ensure background covers the entire element */
+background-size: cover; 
     
     
     
@@ -17,14 +17,16 @@ background-size: cover; /* Ensure background covers the entire element */
 
 #page2{
     
+
 margin: 0; /* Remove default margin */
 padding: 0; /* Remove default padding */
-height: 100%; /* Ensure at least full viewport height */
 min-height: 100vh; /* Minimum height of 100% of the viewport height */
 background: linear-gradient(to top, #8ac2ff, #779696); /* Your gradient */
 background-repeat: no-repeat; /* Do not repeat the background */
 background-attachment: fixed; /* Keep the background fixed during scrolling */
 background-size: cover; /* Ensure background covers the entire element */
+
+    
     
     
 }
@@ -124,7 +126,7 @@ a:hover {
 
 body {
     margin: 0;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     /* Removed flexbox properties to avoid global centering */
     height: auto; /* Changed from 100vh to auto to allow natural document flow */
 }
@@ -423,4 +425,19 @@ body {
 #index-link:hover {
     background-color: #ff8800;
     color: #15513e;
+}
+
+.custom-link {
+    display: inline-block;
+    text-decoration: none;
+    position: fixed; 
+ 
+    bottom : 20px;
+    left: 20px; 
+}
+
+.custom-link img {
+    width: 50px;
+    height: auto;
+    
 }
