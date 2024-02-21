@@ -416,7 +416,7 @@ body {
     color: #ff8800;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #15513e;
+    background-color: #15513e;ß
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, color 0.3s;
@@ -431,7 +431,6 @@ body {
     display: inline-block;
     text-decoration: none;
     position: fixed; 
- 
     bottom : 20px;
     left: 20px; 
 }
