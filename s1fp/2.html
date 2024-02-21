@@ -1,0 +1,59 @@
+<html id="page2"></html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="bodypage2">
+Here you go ... ...
+
+<a href="3.html" id="q2">Do you still wanna continue?
+</a>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3x3 Grid Table with Images</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+<table class="grid-table">
+    <tr>
+        <td><img src="background-img/img11.jpg" alt="Image 1"></td>
+        <td><img src="background-img/img13.jpg" alt="Image 2"></td>
+        <td><img src="background-img/img14.jpg" alt="Image 3"></td>
+    </tr>
+    <tr>
+        <td><img src="background-img/img15.jpg" alt="Image 4"></td>
+        <td><img src="background-img/img16.jpg" alt="Image 5"></td>
+        <td><img src="background-img/img17.jpg" alt="Image 6"></td>
+    </tr>
+    <tr>
+        <td><img src="background-img/img7.jpg" alt="Image 7"></td>
+        <td><img src="background-img/img10.jpg" alt="Image 8"></td>
+        <td><img src="background-img/img12.jpg" alt="Image 9"></td>
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+    window.addEventListener('load', adjustCellHeight);
+    window.addEventListener('resize', adjustCellHeight);
+    
+    function adjustCellHeight() {
+        const cells = document.querySelectorAll('.grid-table td');
+        cells.forEach(cell => {
+            const width = cell.offsetWidth;
+            cell.style.height = width + 'px'; // Set height equal to width
+        });
+    }
+    </script>
+    
+
+
