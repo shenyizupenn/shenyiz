@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <body id="titleone">
+      <p>Click and start exploring the space!<link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&display=swap" rel="stylesheet">
+       </p>
+
+
+    <div id="outerbox">
+      <button id="box1" onclick="openModal('/img/render 1.png')"></button>
+      <button id="box2" onclick="openModal('/img/render 2.png')"></button>
+      <button id="box3" onclick="openModal('/img/first-one-gif.gif')"></button>
+      <button id="box4" onclick="openModal('/img/exploded-animation.gif')"></button>
+      <button id="box5" onclick="openModal('/img/render 3.png')"></button>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <button id="close">Go Back</button>
+      <img id="modal-content" src="" alt="Modal Image" />
+    </div>
+
+    <script>
+      // Function to open modal with specified image
+      function openModal(imageSrc) {
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modal-content");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+      }
+
+      // Close modal when close button is clicked
+      document.getElementById("close").onclick = function () {
+        document.getElementById("modal").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

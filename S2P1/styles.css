@@ -1,0 +1,406 @@
+body {
+  background-color: #3b3b3b;
+}
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  #outerbox {
+    display: block;
+    /* overflow: hidden; */
+    width: 393.6px;
+    height: 255px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-size: 393.6px 255px;
+  }
+  #box1 {
+    position: absolute;
+    left: 139.2px;
+    top: 31.2px;
+    width: 70.5px;
+    height: 63px;
+    background-image: url("/img/upper one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box1:hover {
+    box-shadow: 10px 10px 5px #f0ffaf;
+  }
+  #box2 {
+    left: 66.9px;
+    top: 96.3px;
+    width: 113.1px;
+    height: 65.7px;
+    position: absolute;
+    background-image: url("/img/left one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box2:hover {
+    box-shadow: 10px 10px 5px #afffde;
+  }
+
+  #box3 {
+    position: absolute;
+    left: 196.5px;
+    top: 96.3px;
+    width: 73.8px;
+    height: 78.3px;
+    background-image: url("/img/right one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box3:hover {
+    box-shadow: 10px 10px 5px #ffe0af;
+  }
+
+  #box4 {
+    position: absolute;
+    left: 276.9px;
+    top: 96.3px;
+    width: 33.3px;
+    height: 40.2px;
+    background-image: url("/img/right two.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box4:hover {
+    box-shadow: 10px 10px 5px #ffc5cf;
+  }
+
+  #box5 {
+    position: absolute;
+    left: 164.4px;
+    top: 162px;
+    width: 47.1px;
+    height: 48.6px;
+    background-image: url("/img/bottom one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box5:hover {
+    box-shadow: 10px 10px 5px #fffeaf;
+  }
+  /* Add modal CSS */
+  .modal {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b3b3b;
+    padding: 10px;
+    z-index: 10;
+    width: 30vw; /* Set width to 90% of viewport width */
+    height: 30vh; /* Set height to 90% of viewport height */
+    max-width: 30vw; /* Set max-width to 80% of viewport width */
+    max-height: 15vh; /* Set max-height to 80% of viewport height */
+    overflow: scroll; /* Allow scrolling if content exceeds modal size */
+  }
+  .modal img {
+    max-width: 100%;
+    max-height: 100%;
+    /* background-color: #3b3b3b; */
+    width: auto; /* Set image width to auto */
+    height: auto; /* Set image height to auto */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  #outerbox {
+    display: block;
+    /* overflow: hidden; */
+    width: 787.2px;
+    height: 510px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-size: 787.2px 510px;
+  }
+
+  #box1 {
+    position: absolute;
+    left: 278.4px;
+    top: 62.4px;
+    width: 141px;
+    height: 126px;
+    background-image: url("/img/upper one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box1:hover {
+    box-shadow:10px 10px 5px #b4ffd2;
+  }
+  #box2 {
+    left: 133.8px;
+    top: 192.6px;
+    width: 226.2px;
+    height: 131.4px;
+    position: absolute;
+    background-image: url("/img/left one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box2:hover {
+    box-shadow: 10px 10px 5px #ffecb9;
+  }
+
+  #box3 {
+    position: absolute;
+    left: 393px;
+    top: 192.6px;
+    width: 147.6px;
+    height: 156.6px;
+    background-image: url("/img/right one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box3:hover {
+    box-shadow: 10px 10px 5px #ffc895;
+  }
+
+  #box4 {
+    position: absolute;
+    left: 553.8px;
+    top: 192.6px;
+    width: 66.6px;
+    height: 80.4px;
+    background-image: url("/img/right two.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box4:hover {
+    box-shadow: 10px 10px 5px #cff9c6;
+  }
+
+  #box5 {
+    position: absolute;
+    left: 328.8px;
+    top: 324px;
+    width: 94.2px;
+    height: 97.2px;
+    background-image: url("/img/bottom one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box5:hover {
+    box-shadow: 10px 10px 5px #a6e8f8;
+  }
+  /* Add modal CSS */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b3b3b;
+    padding: 20px;
+    z-index: 10;
+    max-width: 40vw; /* Set max-width to limit the modal size */
+    max-height: 40vh; /* Set max-height to limit the modal size */
+    overflow: auto; /* Allow scrolling if content exceeds modal size */
+  }
+  .modal img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 200%; /* Set image width to 200% of its container */
+    height: 200%; /* Set image height to 200% of its container */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  #outerbox {
+    display: block;
+    /* overflow: hidden; */
+    width: 1312px;
+    height: 850px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-size: 1312px 850px;
+  }
+  #box1 {
+    position: absolute;
+    left: 464px;
+    top: 104px;
+    width: 235px;
+    height: 210px;
+    background-image: url("/img/upper one.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s;
+  }
+  #box1:hover {
+    box-shadow:10px 10px 5px #AFCEFF;
+  }
+  #box2 {
+    left: 223px;
+    top: 321px;
+    width: 377px;
+    height: 219px;
+    position: absolute;
+    background-image: url("/img/left one.png");
+    background-repeat: no-repeat;
+    background-size: 377px 219px;
+    transition: all 1s;
+  }
+  #box2:hover {
+    box-shadow: 10px 10px 5px #AFCEFF;
+  }
+
+  #box3 {
+    position: absolute;
+    left: 655px;
+    top: 321px;
+    width: 246px;
+    height: 261px;
+    background-image: url("/img/right one.png");
+    background-repeat: no-repeat;
+    background-size: 246px 261px;
+    transition: all 1s;
+  }
+  #box3:hover {
+    box-shadow: 10px 10px 5px #AFCEFF;
+  }
+
+  #box4 {
+    position: absolute;
+    left: 923px;
+    top: 321px;
+    width: 111px;
+    height: 134px;
+    background-image: url("/img/right two.png");
+    background-repeat: no-repeat;
+    background-size: 111px 134px;
+    transition: all 1s;
+  }
+  #box4:hover {
+    box-shadow:10px 10px 5px #AFCEFF;
+  }
+
+  #box5 {
+    position: absolute;
+    left: 548px;
+    top: 540px;
+    width: 157px;
+    height: 162px;
+    background-image: url("/img/bottom one.png");
+    background-repeat: no-repeat;
+    background-size: 157px 162px;
+    transition: all 1s;
+  }
+  #box5:hover {
+    box-shadow: 10px 10px 5px #AFCEFF;
+  }
+  /* Add modal CSS */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(255, 255, 255, 0);
+    padding: 20px;
+    z-index: 10;
+    width: 400%; /* Set width to 400% */
+    height: 400%; /* Set height to 400% */
+    max-width: 80vw; /* Set max-width to limit the modal size */
+    max-height: 80vh; /* Set max-height to limit the modal size */
+    overflow: auto; /* Allow scrolling if content exceeds modal size */
+  }
+  .modal img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 200%; /* Set image width to 200% of its container */
+    height: 200%; /* Set image height to 200% of its container */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+#titleone {
+  font-size: 20px; /* Default font size for large screens */
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: regular;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 5%; 
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #bcf8ff;
+}
+
+/* For medium screens (e.g., tablets), adjust the font size */
+@media (max-width: 768px) {
+  #titleone {
+    font-size: 12px; /* Smaller font size for medium screens */
+  }
+}
+
+/* For small screens (e.g., mobile devices), adjust the font size */
+@media (max-width: 480px) {
+  #titleone {
+    font-size: 18px; /* Even smaller font size for small screens */
+  }
+}
+
+#close {
+  position: fixed; /* Keep the button fixed relative to the viewport */
+  top: 5vh; /* Position it 5% from the top of the viewport */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust horizontal positioning for exact centering */
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Keep the background transparent */
+  color: #FFF; /* Set the text color to white, adjust as needed */
+  padding: 5px 10px; /* Add some padding for better appearance */
+  font-family: 'Sarpanch', sans-serif; /* Use the 'Sarpanch' font family */
+  font-weight: 600; /* Set the font weight to semi-bold */
+  text-decoration: underline; /* Add underline to the text */
+  font-size: 18px; /* Increase the font size to 18px */
+  z-index: 11; /* Ensure it's above other modal elements */
+}
