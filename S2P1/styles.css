@@ -18,7 +18,7 @@ button {
     height: 255px;
     position: relative;
     margin: 0 auto;
-    background-image: url("/img/background.png");
+    background-image: url("img/background.png");
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
     background-size: 393.6px 255px;
@@ -29,7 +29,7 @@ button {
     top: 31.2px;
     width: 70.5px;
     height: 63px;
-    background-image: url("/img/upper one.png");
+    background-image: url("img/upper one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -43,7 +43,7 @@ button {
     width: 113.1px;
     height: 65.7px;
     position: absolute;
-    background-image: url("/img/left one.png");
+    background-image: url("img/left one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -58,7 +58,7 @@ button {
     top: 96.3px;
     width: 73.8px;
     height: 78.3px;
-    background-image: url("/img/right one.png");
+    background-image: url("img/right one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -73,7 +73,7 @@ button {
     top: 96.3px;
     width: 33.3px;
     height: 40.2px;
-    background-image: url("/img/right two.png");
+    background-image: url("img/right two.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -88,7 +88,7 @@ button {
     top: 162px;
     width: 47.1px;
     height: 48.6px;
-    background-image: url("/img/bottom one.png");
+    background-image: url("img/bottom one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -136,7 +136,7 @@ button {
     height: 510px;
     position: relative;
     margin: 0 auto;
-    background-image: url("/img/background.png");
+    background-image: url("img/background.png");
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
     background-size: 787.2px 510px;
@@ -148,7 +148,7 @@ button {
     top: 62.4px;
     width: 141px;
     height: 126px;
-    background-image: url("/img/upper one.png");
+    background-image: url("img/upper one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -162,7 +162,7 @@ button {
     width: 226.2px;
     height: 131.4px;
     position: absolute;
-    background-image: url("/img/left one.png");
+    background-image: url("img/left one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -177,7 +177,7 @@ button {
     top: 192.6px;
     width: 147.6px;
     height: 156.6px;
-    background-image: url("/img/right one.png");
+    background-image: url("img/right one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -192,7 +192,7 @@ button {
     top: 192.6px;
     width: 66.6px;
     height: 80.4px;
-    background-image: url("/img/right two.png");
+    background-image: url("img/right two.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -207,7 +207,7 @@ button {
     top: 324px;
     width: 94.2px;
     height: 97.2px;
-    background-image: url("/img/bottom one.png");
+    background-image: url("img/bottom one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -252,7 +252,7 @@ button {
     height: 850px;
     position: relative;
     margin: 0 auto;
-    background-image: url("/img/background.png");
+    background-image: url("img/background.png");
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
     background-size: 1312px 850px;
@@ -263,7 +263,7 @@ button {
     top: 104px;
     width: 235px;
     height: 210px;
-    background-image: url("/img/upper one.png");
+    background-image: url("img/upper one.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 1s;
@@ -277,7 +277,7 @@ button {
     width: 377px;
     height: 219px;
     position: absolute;
-    background-image: url("/img/left one.png");
+    background-image: url("img/left one.png");
     background-repeat: no-repeat;
     background-size: 377px 219px;
     transition: all 1s;
@@ -292,7 +292,7 @@ button {
     top: 321px;
     width: 246px;
     height: 261px;
-    background-image: url("/img/right one.png");
+    background-image: url("img/right one.png");
     background-repeat: no-repeat;
     background-size: 246px 261px;
     transition: all 1s;
@@ -307,7 +307,7 @@ button {
     top: 321px;
     width: 111px;
     height: 134px;
-    background-image: url("/img/right two.png");
+    background-image: url("img/right two.png");
     background-repeat: no-repeat;
     background-size: 111px 134px;
     transition: all 1s;
@@ -322,7 +322,7 @@ button {
     top: 540px;
     width: 157px;
     height: 162px;
-    background-image: url("/img/bottom one.png");
+    background-image: url("img/bottom one.png");
     background-repeat: no-repeat;
     background-size: 157px 162px;
     transition: all 1s;
