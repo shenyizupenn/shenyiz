@@ -64,9 +64,9 @@ body {
     padding: 20px;
     z-index: 10;
     width: 30vw;
-    height: 30vh;
-    max-width: 40vw;
-    max-height: 40vh;
+    height: 50vh;
+    max-width: 50vw;
+    max-height: 50vh;
     overflow: auto;
 }
 
@@ -92,6 +92,14 @@ body {
     width: 100%; /* Full width to cover the parent/container */
     min-height: 1500px; /* Ensuring sufficient space for positioning elements */
 }
+.cube-container {
+    position: relative;
+    width: 80%; /* Set the width to 80% of the viewport width */
+    max-width: 1200px; /* You can adjust this value based on your design requirements */
+    margin: 0 auto; /* Center the container horizontally */
+    padding-top: 50px; /* Add some space on the top inside the container */
+    padding-bottom: 50px; /* Add some space on the bottom inside the container */
+}
 
 #box1 {
     position: absolute;
@@ -107,12 +115,12 @@ body {
 }
 
 #box1:hover {
-    filter: drop-shadow(5px 5px 5px rgba(197, 121, 197, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+    filter: drop-shadow(18px 18px 18px rgba(149, 107, 229, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
 }
 
 #box2 { /* Specific styles for the Yellow Cube */
     position: absolute;
-    left: 19%; /* Position the element 19% from the left of the container */
+    left: 28%; /* Position the element 19% from the left of the container */
     top: 558px; /* Position the top of the element at 1258px from the top of the container */
     width: 193px; /* Exact width of the Yellow Cube */
     height: 250px; /* Exact height of the Yellow Cube */
@@ -120,6 +128,124 @@ body {
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the image covers the entire area of the box */
 }
+#box2:hover {
+    filter: drop-shadow(15px 15px 15px rgba(247, 177, 64, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+#box3 {
+    position: absolute;
+    left: 50%; /* Center the element horizontally within the outerbox */
+    top: 710px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 320px; /* Exact width of the Purple Cube */
+    height: 350px; /* Exact height of the Purple Cube */
+    background-image: url("images/blue cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box3:hover {
+    filter: drop-shadow(28px 28px 28px rgba(107, 164, 229, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+#box4 {
+    position: absolute;
+    left: 22%; /* Center the element horizontally within the outerbox */
+    top: 900px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 220px; /* Exact width of the Purple Cube */
+    height: 230px; /* Exact height of the Purple Cube */
+    background-image: url("images/orange cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box4:hover {
+    filter: drop-shadow(12px 12px 12px rgba(220, 116, 43, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+#box5 {
+    position: absolute;
+    left: 40%; /* Center the element horizontally within the outerbox */
+    top: 1150px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 188px; /* Exact width of the Purple Cube */
+    height: 196px; /* Exact height of the Purple Cube */
+    background-image: url("images/pink cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box5:hover {
+    filter: drop-shadow(12px 12px 12px rgba(202, 47, 99, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+#box6 {
+    position: absolute;
+    left: 65%; /* Center the element horizontally within the outerbox */
+    top: 1150px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 192px; /* Exact width of the Purple Cube */
+    height: 196px; /* Exact height of the Purple Cube */
+    background-image: url("images/dark yellow cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box6:hover {
+    filter: drop-shadow(12px 12px 12px rgba(255, 172, 89, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+
+#box7 {
+    position: absolute;
+    left: 70%; /* Center the element horizontally within the outerbox */
+    top: 530px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 250px; /* Exact width of the Purple Cube */
+    height: 250px; /* Exact height of the Purple Cube */
+    background-image: url("images/light green cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box7:hover {
+    filter: drop-shadow(12px 12px 12px rgba(39, 232, 229, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+
+#box8 {
+    position: absolute;
+    left: 55%; /* Center the element horizontally within the outerbox */
+    top: 1400px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 140px; /* Exact width of the Purple Cube */
+    height: 140px; /* Exact height of the Purple Cube */
+    background-image: url("images/light blue cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box8:hover {
+    filter: drop-shadow(12px 12px 12px rgba(39, 110, 232, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+} 
+
+#box9 {
+    position: absolute;
+    left: 80%; /* Center the element horizontally within the outerbox */
+    top: 900px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 200px; /* Exact width of the Purple Cube */
+    height: 210px; /* Exact height of the Purple Cube */
+    background-image: url("images/green cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box9:hover {
+    filter: drop-shadow(12px 12px 12px rgba(39, 232, 177, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+} 
 
 @media (max-width: 767px) {
     #outerbox {
