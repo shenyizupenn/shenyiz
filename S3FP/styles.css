@@ -1,0 +1,144 @@
+ /* Base styles for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, #00c3ff68, #db3a3ac0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    position: relative; /* Position relative for absolute children if needed */
+    top: 0; /* Reset top if previously set */
+    width: 100%; /* Full width */
+    padding-top: 184px; /* Adjust top padding to position the group at the desired height */
+    height: auto; /* Adjust height to fit contents */
+}
+
+.logo {
+    width: 195.68px; /* Set width of the logo */
+    height: 84px; /* Set height of the logo */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.title {
+    font-size: 64px; /* Font size of the title */
+    color: #ffffff; /* Color of the text */
+    font-family: 'Proza Libre', sans-serif; /* Ensure this matches the font family name used in your font import */
+    margin: 0; /* Reset margin to remove unwanted space */
+}
+
+
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto; /* Changed from 100vh to auto */
+    padding-top: 292px; /* Control top spacing directly */
+    padding-bottom: 50px; /* Additional padding to control space below the image */
+}
+
+.profile-picture {
+    position: relative; /* Changed from absolute if no longer needed to be positioned from top of viewport */
+    margin: 0 auto; /* Centering horizontally if flex properties are not enough */
+    width: 270px; /* Fixed width */
+    height: 270px; /* Fixed height */
+    border-radius: 50%;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b3b3b;
+    padding: 20px;
+    z-index: 10;
+    width: 30vw;
+    height: 30vh;
+    max-width: 40vw;
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 1vw;
+    text-decoration: underline;
+}
+
+#outerbox {
+    position: relative; /* Essential for positioning its children absolutely */
+    width: 100%; /* Full width to cover the parent/container */
+    min-height: 1500px; /* Ensuring sufficient space for positioning elements */
+}
+
+#box1 {
+    position: absolute;
+    left: 50%; /* Center the element horizontally within the outerbox */
+    top: 284px; /* Adjusted top position */
+    transform: translateX(-50%); /* Horizontally center the element */
+    width: 267.52px; /* Exact width of the Purple Cube */
+    height: 296px; /* Exact height of the Purple Cube */
+    background-image: url("images/purple cube.png"); /* Image for the Purple Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the dimensions of the box */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+#box1:hover {
+    filter: drop-shadow(5px 5px 5px rgba(197, 121, 197, 0.6)); /* Apply a drop-shadow that follows the shape of the PNG */
+}
+
+#box2 { /* Specific styles for the Yellow Cube */
+    position: absolute;
+    left: 19%; /* Position the element 19% from the left of the container */
+    top: 558px; /* Position the top of the element at 1258px from the top of the container */
+    width: 193px; /* Exact width of the Yellow Cube */
+    height: 250px; /* Exact height of the Yellow Cube */
+    background-image: url("images/yellow-cube.png"); /* Image for the Yellow Cube */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire area of the box */
+}
+
+@media (max-width: 767px) {
+    #outerbox {
+        min-height: 2000px; /* Increased minimum height for repositioned elements */
+    }
+    #box1, #box2 {
+        width: 80%; /* Responsive width adjustment for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #outerbox {
+        min-height: 1500px; /* Adequate space for positioning */
+    }
+}
+
+@media (min-width: 992px) {
+    #outerbox {
+        min-height: 1500px; /* Ensuring sufficient space for fixed positioning */
+    }
+}

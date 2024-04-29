@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1 class="title">Shenyi Zhang Final</h1>
+  </div>
+
+  <!-- Central image section -->
+  <div class="profile-picture-container">
+    <img src="images/profile pic.png" alt="Profile Picture" class="profile-picture">
+  </div>
+
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Lower section with clickable images -->
+  <div id="outerbox">
+    <!-- Remove inline styles for better CSS control -->
+    <a href="https://example.com/link1" target="_blank">
+      <img src="images/purple cube.png" alt="Purple Cube" id="box1">
+    </a>
+    <a href="https://example.com/link2" target="_blank">
+      <img src="images/yellow cube.png" alt="Yellow Cube" id="box2">
+    </a>
+    <!-- Add more links and images as needed -->
+  </div>
+
+  <!-- Modal (if still needed) -->
+  <div id="modal" class="modal">
+    <button id="close">Go Back</button>
+    <img id="modal-content" src="" alt="Modal Image" />
+  </div>
+
+  <script>
+    function openModal(imageSrc) {
+      var modal = document.getElementById("modal");
+      var modalImg = document.getElementById("modal-content");
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+    }
+
+    document.getElementById("close").onclick = function () {
+      document.getElementById("modal").style.display = "none";
+    };
+  </script>
+</body>
+</html>
