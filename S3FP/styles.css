@@ -1,5 +1,5 @@
  /* Base styles for the entire page */
-body {
+#first-page-body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -185,7 +185,7 @@ body {
     top: 1150px; /* Adjusted top position */
     transform: translateX(-50%); /* Horizontally center the element */
     width: 192px; /* Exact width of the Purple Cube */
-    height: 196px; /* Exact height of the Purple Cube */
+    height: 246px; /* Exact height of the Purple Cube */
     background-image: url("images/dark yellow cube.png"); /* Image for the Purple Cube */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the dimensions of the box */
@@ -202,7 +202,7 @@ body {
     top: 530px; /* Adjusted top position */
     transform: translateX(-50%); /* Horizontally center the element */
     width: 250px; /* Exact width of the Purple Cube */
-    height: 250px; /* Exact height of the Purple Cube */
+    height: 330px; /* Exact height of the Purple Cube */
     background-image: url("images/light green cube.png"); /* Image for the Purple Cube */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the dimensions of the box */
@@ -219,7 +219,7 @@ body {
     top: 1400px; /* Adjusted top position */
     transform: translateX(-50%); /* Horizontally center the element */
     width: 140px; /* Exact width of the Purple Cube */
-    height: 140px; /* Exact height of the Purple Cube */
+    height: 183px; /* Exact height of the Purple Cube */
     background-image: url("images/light blue cube.png"); /* Image for the Purple Cube */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the dimensions of the box */
@@ -267,4 +267,148 @@ body {
     #outerbox {
         min-height: 1500px; /* Ensuring sufficient space for fixed positioning */
     }
+}
+
+/* General Styles */
+#second-page-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #afffcf, #4A6896);
+    overflow: hidden; /* Prevent background scrolling when popup is displayed */
+}
+
+.container {
+    width: 800px;
+    position: relative; /* Added position relative to contain popup */
+}
+
+.table {
+    margin-top: 100px;
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.box {
+    display: table-cell;
+    width: 25%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+}
+
+.box:active {
+    transform: translateY(0); /* Reset position when card is pressed */
+}
+
+.box img {
+    max-width: 100%;
+}
+
+/* Popup Styles */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Ensure popup appears on top of everything */
+    overflow: auto; /* Enable scrolling for popup content */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Set width of the popup */
+    height: 800px; /* Set height of the popup */
+    background-color: rgba(243, 243, 243, 0); /* Set background color to transparent */
+    padding: 20px;
+    border-radius: 24px; /* Set border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 8px 12px; /* Padding around the close button */
+    border-radius: 15%; /* Rounded corners to create a circular shape */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.close:hover {
+    background-color: rgba(255, 128, 128, 0.2); /* Fully opaque white background on hover */
+}
+
+
+.close::after,
+.close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px; /* Width of the lines */
+    height: 15px; /* Height of the lines */
+    background-color: #333; /* Color of the lines */
+}
+
+.close::after {
+    transform: translate(-50%, -50%) rotate(45deg); /* Diagonal line */
+}
+
+.close::before {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Diagonal line */
+}
+
+
+
+.popup-text {
+    margin-top: 20px;
+    font-size: 16px; /* Increased font size */
+    text-align: left;
+    font-family: 'Mina', sans-serif; /* Set font family */
+}
+
+.popup-text h1 {
+    font-size: 28px; /* Increased font size */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+}
+
+a.goBack {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #418d63; /* Background color */
+    color: #FFFFFF; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+a.goBack:hover {
+    background-color: #37474F; /* Darker background color on hover */
 }

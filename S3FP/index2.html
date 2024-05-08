@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><body id="second-page-body">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Page with Rectangular Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+            <div class="row">
+                <div class="box" onclick="showPopup('images/card1_large.png', 'Week 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '#ff9e9e')"><img src="images/card 1.png" alt="Unit 1"></div>
+                <div class="box" onclick="showPopup('images/card2_large.png', 'Week 3', 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '#9effa8')"><img src="images/card 2.png" alt="Unit 2"></div>
+                <div class="box" onclick="showPopup('images/card10_large.png', 'Week 4', 'Nulla facilisi. Fusce condimentum turpis eu dolor posuere, id eleifend nisi aliquet.', '#a8aaff')"><img src="images/card 10.png" alt="Unit 3"></div>
+                <div class="box" onclick="showPopup('images/card11_large.png', 'Week 5', 'Sed auctor justo id libero posuere, ut tincidunt enim tempor.', '#ffdd9e')"><img src="images/card 11.png" alt="Unit 4"></div>
+            </div>
+            <div class="row">
+                <div class="box" onclick="showPopup('images/card5_large.png', 'Week 6', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', '#9effe1')"><img src="images/card 5.png" alt="Unit 5"></div>
+                <div class="box" onclick="showPopup('images/card6_large.png', 'Week 8', 'Suspendisse ut nunc a sapien fermentum rutrum nec a elit.', '#ffb3ff')"><img src="images/card 6.png" alt="Unit 6"></div>
+                <div class="box" onclick="showPopup('images/card9_large.png', 'Week 9', 'Donec id est a risus pellentesque interdum. Donec at sem ac enim suscipit laoreet.', '#9ed9ff')"><img src="images/card 9.png" alt="Unit 7"></div>
+                <div class="box" onclick="showPopup('images/card14_large.png', 'Week 11', 'Proin volutpat tortor non felis faucibus, non facilisis neque vestibulum.', '#ff9ed6')"><img src="images/card 14.png" alt="Unit 8"></div>
+            </div>
+            <div class="row">
+                <div class="box" onclick="showPopup('images/card7_large.png', 'Week 12', 'Nam nec justo at nunc fermentum ultrices. Sed condimentum ex eget nunc suscipit.', '#a8ffb3')"><img src="images/card 7.png" alt="Unit 9"></div>
+                <div class="box" onclick="showPopup('images/card11_large.png', 'Week 13', 'In ut orci ut sem congue dignissim eu eu elit.', '#ffe49e')"><img src="images/card 11.png" alt="Unit 10"></div>
+                <div class="box" onclick="showPopup('images/card12_large.png', 'Week 14', 'Integer laoreet tellus ac est fringilla bibendum.', '#e09eff')"><img src="images/card 12.png" alt="Unit 11"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="">
+            <div class="popup-text">
+                <h1 id="popup-title"></h1>
+                <p id="popup-body"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(imageSrc, title, body, bgColor) {
+            var popup = document.getElementById("popup");
+            var popupImage = document.getElementById("popup-image");
+            var popupTitle = document.getElementById("popup-title");
+            var popupBody = document.getElementById("popup-body");
+    
+            popup.style.display = "block";
+            popup.style.backgroundColor = bgColor; // Set background color
+            popupImage.src = imageSrc;
+            popupTitle.textContent = title;
+    
+            // Set the body text based on the card title
+            switch (title) {
+                case 'Week 2': // Card 1
+                    popupBody.innerHTML = `
+                        <p>I am very interested in reading this about Mail Art. While some may perceive Mail Art as mere postcards, its essence lies in utilizing the postal system as a medium, challenging communication norms. The artist's control over the creation process contrasts with the posting constraints, symbolic of a guerrilla war against an elusive "Big Monster."</p>
+                        <p>I believe that the success of Mail Art is measured by the harmony created through responses, emphasizing the importance of knocking persistently at the Monster's door, fostering a collective and harmonious artistic endeavor. The search for innovative ideas and the call for Mail Art contributions continue, inviting artists to contribute beyond spoken ideas, urging them to be mailed for a lasting impact.</p>
+                        <p>Some questions I have:</p>
+                        <ul>
+                            <li>How can Mail Art be seen as a commentary on the broader dynamics of communication, particularly in the context of traditional versus unconventional mediums?</li>
+                            <li>How does Mail Art challenge conventional ideas about communication and artistic expression?</li>
+                        </ul>`;
+                    break;
+                case 'Week 3': // Card 2
+                    popupBody.innerHTML = `
+                        <p>In "What is a Website?" Édouard U. navigates the complex landscape of the internet, stressing the foundational aspects of website creation while highlighting the challenges posed by advertising-focused social media platforms. Through metaphorical lenses like rooms, shelves, and gardens, U. illuminates the diverse dimensions of websites, underscoring their capacity for individual expression and growth. He advocates for the significance of personal websites, especially for artists, in redirecting the internet towards a more user-centric future. U. challenges the conventional metaphor of the internet as a cloud, suggesting alternative visualizations such as a flock of birds. This perspective accentuates the necessity of recognizing individual nodes, urging for heightened personal responsibility in shaping a more meaningful online experience.</p>
+                        <p>Given the emphasis on the individual act of creating websites as highlighted by U., how does the collaborative nature of architectural projects compare or contrast with the process of developing a personal website?</p>
+                        <p>How can the concept of "gardening techniques" in learning and memory, as mentioned in the text, be applied to the design process of websites?</p>`;
+                    break;
+                case 'Week 4': // Card 3
+                    popupBody.innerHTML = `
+                        <p>The article explores the cultural and technological significance of Geocities as a pioneering platform for personal webpages, emphasizing its role in democratizing web design and content creation before the rise of social media. It highlights the archival efforts to preserve Geocities content post-shutdown, offering insights into digital heritage and the transient nature of web content. This case study parallels web design's evolution with art, where the shift from amateur, personalized web creation to professional, standardized designs reflects broader trends in art and design's accessibility and expression. Geocities' templates and user-generated content serve as a reminder of the web's early diversity and creativity, similar to how art movements have historically democratized and diversified artistic expression.</p>
+                        <p>Questions for discussion:</p>
+                        <ul>
+                            <li>How can the principles of preservation seen in the Geocities archive be applied to contemporary digital art and design to ensure future accessibility and historical context?</li>
+                            <li>In what ways do the evolution and eventual obsolescence of platforms like Geocities inform current web design and artistic practices regarding the balance between individual creativity and standardized aesthetics?</li>
+                        </ul>`;
+                    break;
+                case 'Week 5': // Card 4
+                    popupBody.innerHTML = `
+                        <p>This workbook intriguingly positions alt-text within the realm of poetry, suggesting that the descriptive process can transcend mere accessibility functionality to become an expressive, creative act. It emphasizes the importance of thoughtful language use, attention to audience subjectivity, and the balance between informative precision and creative expression. The workbook challenges the conventional boundaries of alt-text, proposing that engaging with visual content description can be a deeply reflective and imaginative practice. This perspective not only broadens the scope of alt-text but also deepens the engagement with web accessibility, urging a reconsideration of how we communicate visual experiences to all users, including those who rely on screen readers.</p>
+                        <p>Questions:</p>
+                        <ul>
+                            <li>How can the approach of viewing alt-text as poetry enhance the creativity and effectiveness of web accessibility practices, particularly in engaging diverse audiences?</li>
+                            <li>Considering the inherent subjectivity in describing images, what strategies can be employed to ensure alt-text remains inclusive and accessible to people with different interpretations and experiences?</li>
+                        </ul>`;
+                    break;
+                case 'Week 6': // Card 5
+                    popupBody.innerHTML = `
+                        <p>Ramsey Nasser's article from "Decolonising the Digital" critiques the One Laptop Per Child (OLPC) project and broader technological efforts for assuming English proficiency, which undermines true inclusivity in digital technology. The OLPC's distribution of laptops to children in developing countries, while aiming to enhance education, inherently carried an English bias through its use of English-centric programming languages and operating systems like Python and UNIX. Nasser discusses the broader implications of this issue, particularly in digital typography and programming languages, where the predominance of the English language and Latin script leads to the exclusion of non-English speakers and scripts like Arabic. He highlights the cultural insensitivity and technical challenges in creating digital content and programming languages that accommodate diverse linguistic structures. Nasser's experiment with قلب (Qalb), an Arabic programming language, exemplifies the deep-seated biases within digital tools and the difficulty of achieving a universal computing experience. The article calls into question the feasibility of truly inclusive digital technology that respects global linguistic and cultural diversity.</p>
+                        <ul>
+                            <li>. How can digital technology and programming evolve to embrace cultural and linguistic diversity beyond localization?</li>
+                            <li>What strategies could enable genuine empowerment of non-English languages and cultures in the digital realm?</li>
+                        </ul>`;
+                    break;
+
+                case 'Week 8': // Card 6
+                    popupBody.innerHTML = `
+                        <p>Ramsey Nasser's article from "Decolonising the Digital" critiques the One Laptop Per Child (OLPC) project and broader technological efforts for assuming English proficiency, which undermines true inclusivity in digital technology. The OLPC's distribution of laptops to children in developing countries, while aiming to enhance education, inherently carried an English bias through its use of English-centric programming languages and operating systems like Python and UNIX. Nasser discusses the broader implications of this issue, particularly in digital typography and programming languages, where the predominance of the English language and Latin script leads to the exclusion of non-English speakers and scripts like Arabic. He highlights the cultural insensitivity and technical challenges in creating digital content and programming languages that accommodate diverse linguistic structures. Nasser's experiment with قلب (Qalb), an Arabic programming language, exemplifies the deep-seated biases within digital tools and the difficulty of achieving a universal computing experience. The article calls into question the feasibility of truly inclusive digital technology that respects global linguistic and cultural diversity.</p>
+                        <ul>
+                            <li>. How can digital technology and programming evolve to embrace cultural and linguistic diversity beyond localization?</li>
+                            <li>What strategies could enable genuine empowerment of non-English languages and cultures in the digital realm?</li>
+                        </ul>`;
+                    break;
+
+                case 'Week 9': // Card 7
+                    popupBody.innerHTML = `
+                        <p>Ben Duvall's "New Modernism(s)" explores the evolution of graphic design from modernism to postmodernism, and proposes the term "hypermodernism" to describe the current phase. Duvall discusses how graphic design, particularly through the use of surfaces and signs, reflects cultural epochs. He argues that modernism emphasized a clear relationship between signifier and signified, while postmodernism celebrated ambiguity and fragmentation. Hypermodernism, according to Duvall, is characterized by the digital era's infinite surfaces and hyperlinked meanings, where design elements are interconnected in a vast web of contexts. He highlights the shift from physical to virtual spaces as central to understanding contemporary design trends. Duvall uses examples like Disney's iconography to illustrate how modern and postmodern elements are being reinterpreted in today's digital landscape, emphasizing the critical role of graphic design in navigating and representing this complex, hyperlinked world.</p>
+                        <ul>
+                            <li>. How can the concept of hypermodernism in graphic design be applied to contemporary architectural practices, especially in creating spaces that reflect today's digital and interconnected society?</li>
+                            <li>Considering Duvall's discussion on the importance of surface in design, how can architects leverage surfaces in buildings to communicate or embody hypermodern values and aesthetics?</li>
+                        </ul>`;
+                    break;
+                case 'Week 11': // Card 8
+                    popupBody.innerHTML = `
+                        <p>Dot Tuer's article examines Vera Frenkel’s innovative use of technology in art, particularly through her 1974 performance "String Games." Frenkel's work is recognized for pioneering the integration of new media into art, using teleconferencing to link Toronto and Montreal in a live interactive piece that reinterprets the traditional Cat’s Cradle game. Tuer highlights the significance of Frenkel’s exploration of technology, memory, and loss, emphasizing the "poetics of absence" present in her art. Despite its innovative nature, "String Games" and similar works by Frenkel have been largely overlooked in new media art histories, a neglect Tuer attributes to broader issues of gender and technological dominance in the art world. The article calls for a reassessment of Frenkel’s contributions, positioning her at the forefront of discussions on digital media’s impact on themes of memory, loss, and historical consciousness in the digital age.</p>
+                        <ul>
+                            <li>. How does Vera Frenkel’s use of new media technologies challenge traditional notions of presence and absence in art?</li>
+                            <li>In what ways does the exclusion of works like "String Games" from mainstream new media art histories reflect broader issues of gender and technology in the art world?</li>
+                        </ul>`;
+                    break;
+                case 'Week 12': // Card 9
+                    popupBody.innerHTML = `
+                        <p>In "Performing the Feed," Paul Soulellis explores the evolution of publishing practices through the lens of network culture and algorithmic media. He begins by tracing the origins of the act of posting, viewing it as a foundational gesture of making public. The traditional paradigm of publishing, he argues, is based on interruption, a visible substrate, and semantic-based curation, usually following a one-to-many model. However, Soulellis notes a shift towards what he terms "feeds that never end," highlighting the performative nature of platforms like Twitch, where streamers broadcast their activities live, engaging in a continuous transmission of minor events. This shift represents a move from publishing as a signal to publishing as noise, a durational time-space that forms around the image as it circulates.
+
+Soulellis discusses the "new boredom," a state of watching-togetherness, where the continuous feed satisfies our desire to watch and bear witness, despite the potential for encountering bias, bigotry, and hate speech. He observes that as our tolerance for surveillance increases, the nature of watching has changed, leading to a collective subjectivity that thrives on social media feeds. The author also mentions the historical roots of the feed in electrical telegraphic transmission and suggests that the modern feed, with its endless flow of information, represents a new paradigm of publishing characterized by non-human voices, algorithmic curation, and a performative stream of data.
+
+Soulellis questions how we can engage with these new forms of media, suggesting the need for new tools and techniques to discern, authenticate, and understand the entanglement of power, automation, simulation, and algorithmic media. He calls for a multiplicity of modalities to resist the new boredom and engage with future forms of media that present limitless realities.</p>
+                        <ul>
+                            <li>. How does the transition from the traditional paradigm of publishing to the continuous, algorithm-driven feeds impact our understanding of authorship and authenticity in the digital age?</li>
+                            <li>In what ways can artists, archivists, and activists challenge or leverage the new paradigm of publishing to foster critical engagement and resist the homogenization of cultural consumption?</li>
+                        </ul>`;
+                    break;
+                case 'Week 13': // Card 10
+                    popupBody.innerHTML = `
+                        <p>Beyond Dark Matter" follows Gem, a tech-savvy student navigating the tough world of school, where academic and social pressures mount. Though Gem excels with computers, her deep involvement often leaves her feeling cut off from her peers. Everything changes when an unexpected software update pulls her into "The Way," a virtual world within her computer designed to personalize her digital interactions by learning from her history. However, this program also exposes some unsettling aspects of technology, including the outdated use of terms like "master/slave."
+
+Inside "The Way," Gem travels through pivotal moments from history and her own life, eventually stumbling upon "The Beyond." This space values intuition and community above the dominance of technology. The story peaks as Gem chooses to break free from the pervasive digital influence, reconnecting with her community in a deep, impactful way. She comes to appreciate the importance of communal support over isolated tech endeavors.
+
+The tale critiques the tendency of technology to overshadow essential human connections and community values. It invites readers to ponder technology's role in personal and historical contexts and promotes a harmonious use of digital tools to support, not control, human experiences.</p>
+                        <ul>
+                            <li>. How can communities balance the benefits of technology with the need to maintain strong interpersonal connections and local cultural identities?</li>
+                            <li>In what ways can technology be reimagined or redesigned to be more inclusive and reflective of diverse histories and experiences?</li>
+                        </ul>`;
+                    break;
+                case 'Week 14': // Card 11
+                    popupBody.innerHTML = `
+                        <p>Boris Groys explores the transformation of art and literature in the age of the internet in his piece "Art on the Internet." He discusses how the digital age has moved cultural production away from traditional, physical institutions like museums and theaters, towards a more decentralized and accessible online environment. This shift has not only democratized artistic expression but also altered the nature of what constitutes art and literature. Groys argues that on the internet, art and literature are stripped of their fictional guise and presented as real processes within the actual world, thereby de-fictionalizing cultural outputs. The internet's architecture doesn’t isolate art but exposes it alongside all other types of information, blending artistic content with factual data about its creators. This integration challenges the traditional separation between the creation and exhibition of art, impacting how art is consumed and perceived. Groys posits that the internet effectively becomes a global stage where all actions are visible, turning personal creation into public information and reshaping the artist’s role in society.</p>
+                        <ul>
+                            <li>. How does Groys believe the internet's nature as a non-selective medium impacts traditional notions of artistic and literary value?</li>
+                            <li>What are the potential implications of the internet's capability to blur the lines between art and non-art information for future cultural production?</li>
+                        </ul>`;
+                    break;
+                default:
+                    popupBody.textContent = body;
+            }
+        }
+    
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            popup.style.backgroundColor = bgColor; // Set background color
+    console.log("Popup background color:", popup.style.backgroundColor); // Log applied background color
+        }
+    </script>
+    
+    <a href="index.html" class="goBack">Go Back</a>
+
+</body>
+</html>
